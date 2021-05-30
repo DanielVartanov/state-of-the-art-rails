@@ -1,0 +1,17 @@
+<h3>Send new message</h3>
+
+<%= form_with model: @message do |form| %>
+  <div>
+    <%= form.label :user_id, 'Author' %><br>
+    <%= form.collection_select :user_id, User.all, :id, :name  %>
+  </div>
+
+  <div>
+    <%= form.label :content %><br>
+    <%= form.text_field :content %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
