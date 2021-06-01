@@ -1,10 +1,6 @@
 <h2>Messages</h2>
 
-<% @messages.each do |message| %>
-  <p>
-    "<%= message.content %>" by <strong><%= message.user.name %></strong>
-  </p>
-<% end %>
+<%= render @messages %>
 
 <p>
   <%= link_to 'Send new message', new_message_path %>
