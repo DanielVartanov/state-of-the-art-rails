@@ -2,7 +2,7 @@
 
 <%= render @messages %>
 
-<%= turbo_frame_tag 'new_message', src: new_message_path, target: '_top' %>
+<%= render template: 'messages/new' %>
 
 <p>
   <%= link_to 'Go to users', users_path %>

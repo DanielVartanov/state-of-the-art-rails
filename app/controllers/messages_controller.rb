@@ -4,16 +4,15 @@ class MessagesController < ApplicationController
   end
 
   def new
-    @message = Message.new
+
   end
 
   def create
-    @message = Message.new params.require(:message).permit(:user_id, :content)
+    @message = Message.create! params.require(:message).permit(:user_id, :content)
 
-    if @message.save
-      redirect_to :messages
-    else
-      render :new
+    respond_to do |format|
+      format.turbo_stream
+      format.html { redirect_to :messages }
     end
   end
 end
