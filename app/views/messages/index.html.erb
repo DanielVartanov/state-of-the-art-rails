@@ -1,6 +1,10 @@
 <h2>Messages</h2>
 
-<%= render @messages %>
+<%= turbo_stream_from 'messages_stream' %>
+
+<%= turbo_frame_tag 'messages' do %>
+    <%= render @messages %>
+<% end %>
 
 <%= render template: 'messages/new' %>
 
