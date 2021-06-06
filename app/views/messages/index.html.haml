@@ -1,0 +1,10 @@
+%h2 Messages
+
+= turbo_stream_from 'messages_stream'
+
+= turbo_frame_tag 'messages' do
+  = render @messages
+
+= render template: 'messages/new'
+
+%p= link_to 'Go to users', users_path

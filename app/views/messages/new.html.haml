@@ -1,0 +1,10 @@
+= turbo_frame_tag 'new_message' do
+  = form_with model: Message.new do |form|
+    %p
+      = form.label :user_id, 'Author'
+      = form.collection_select :user_id, User.all, :id, :name
+    %p
+      = form.label :content
+      = form.text_field :content
+    %p
+      = form.submit
