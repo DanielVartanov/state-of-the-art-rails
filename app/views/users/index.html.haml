@@ -4,4 +4,16 @@
   - @users.each do |user|
     %li= user.name
 
-= link_to 'Go to messages', messages_path
+%h3 Add new user
+
+= form_with(model: User.new) do |form|
+  %p
+    = form.label :name, 'Name'
+    = form.text_field :name
+  = form.submit
+
+%br
+%hr
+
+%p
+  = link_to 'Go to messages', messages_path
