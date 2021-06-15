@@ -161,6 +161,7 @@ GEM
       ffi (~> 1.0)
     redis (4.2.5)
     regexp_parser (2.1.1)
+    rexml (3.2.5)
     ruby_parser (3.16.0)
       sexp_processor (~> 4.15, >= 4.15.1)
     rubyzip (2.3.0)
@@ -230,6 +231,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.3, >= 6.1.3.2)
   redis (~> 4.0)
+  rexml
   sass-rails (>= 6)
   selenium-webdriver
   spring
