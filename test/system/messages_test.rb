@@ -31,4 +31,20 @@ class MessagesTest < ApplicationSystemTestCase
     assert_text '"Hello from tests!" by Mr. Test'
     assert_text '"Hello from another test author" by Mr. Second test'
   end
+
+  test 'messages appear in realtime when create from another browser window' do
+    visit messages_url
+
+    Capybara.using_session('another browser window') do
+      visit messages_url
+
+      within 'turbo-frame#new_message' do
+        select 'Mr. Second test', from: 'Author'
+        fill_in 'Content', with: 'Hello from another browser window'
+        click_on 'Create Message'
+      end
+    end
+
+    assert_text '"Hello from another browser window" by Mr. Second test'
+  end
 end
