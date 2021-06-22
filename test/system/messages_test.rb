@@ -2,12 +2,12 @@ require "application_system_test_case"
 
 class MessagesTest < ApplicationSystemTestCase
   def setup
-    User.create!(name: 'Mr. Test').tap do |user|
-      Message.create! content: 'First!', user: user
-      Message.create! content: 'Second!', user: user
+    create(:user, name: 'Mr. Test').tap do |user|
+      create :message, content: 'First!', user: user
+      create :message, content: 'Second!', user: user
     end
 
-    User.create! name: 'Mr. Second test'
+    create :user, name: 'Mr. Second test'
   end
 
   test 'visit messages page' do
