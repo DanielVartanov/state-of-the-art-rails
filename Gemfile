@@ -15,7 +15,7 @@ gem 'bootsnap', require: false
 gem 'haml-rails'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'break'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'puts_debuggerer'
