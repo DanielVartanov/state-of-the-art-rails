@@ -19,6 +19,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'puts_debuggerer'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -26,6 +27,7 @@ group :development do
   gem 'rack-mini-profiler'
   gem 'listen'
   gem 'spring'
+  gem 'spring-commands-rspec'
 end
 
 group :test do
@@ -33,4 +35,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
   gem 'rexml'
+  gem 'rspec-its'
 end
