@@ -33,5 +33,5 @@ ActionController::Base.allow_rescue = false
 DatabaseCleaner.strategy = :truncation
 
 require 'capybara/rails'
-Capybara.default_driver = :selenium_chrome
+Capybara.default_driver = :selenium_chrome_headless
 Capybara.server = :puma, { Silent: true }
