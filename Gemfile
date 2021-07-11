@@ -36,4 +36,6 @@ group :test do
   gem 'webdrivers'
   gem 'rexml'
   gem 'rspec-its'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
