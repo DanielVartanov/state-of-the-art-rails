@@ -265,6 +265,8 @@ GEM
     semantic_range (3.0.0)
     sexp_processor (4.15.3)
     spring (2.1.1)
+    spring-commands-cucumber (1.0.1)
+      spring (>= 0.9.1)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
     sprockets (4.0.2)
@@ -331,6 +333,7 @@ DEPENDENCIES
   sass-rails
   selenium-webdriver
   spring
+  spring-commands-cucumber
   spring-commands-rspec
   turbo-rails
   web-console

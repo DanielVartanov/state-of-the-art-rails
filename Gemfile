@@ -28,6 +28,7 @@ group :development do
   gem 'listen'
   gem 'spring'
   gem 'spring-commands-rspec'
+  gem 'spring-commands-cucumber'
 end
 
 group :test do
