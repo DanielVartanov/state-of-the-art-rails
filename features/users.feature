@@ -1,8 +1,10 @@
 Feature: Users page
 
   Scenario: Users index page
+    Given a user "Mr. Test"
     When I go to the "Users" page
     Then I should see "Users"
+    And I should see "Mr. Test"
     And I should see "Go to messages"
 
 
