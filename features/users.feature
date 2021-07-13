@@ -9,7 +9,7 @@ Feature: Users page
 
 
   Scenario: Creating a new user
-    When I go to the "Users" page
+    When I am on the "Users" page
     And I fill in "Name" with "Mr. Test"
     And I click "Create User"
     Then I should see "Mr. Test"

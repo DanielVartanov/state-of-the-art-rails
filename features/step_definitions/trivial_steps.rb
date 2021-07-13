@@ -1,9 +1,24 @@
-When 'I go to the {string} page' do |page|
-  known_pages = {
-    "Users" => users_path
-  }
+module KnownPages
+  KNOWN_PAGES = {
+    "Users" => -> { users_path }
+  }.freeze
 
-  visit known_pages[page]
+  def visit_known_page(page_name)
+    page = KNOWN_PAGES[page_name]
+    page = self.instance_exec(&page) if page.is_a?(Proc)
+
+    visit self.instance_exec(&KNOWN_PAGES.fetch(page_name))
+  end
+end
+
+World(KnownPages)
+
+Given 'I am on the {string} page' do |page|
+  visit_known_page page
+end
+
+When 'I go to the {string} page' do |page|
+  visit_known_page page
 end
 
 When 'I fill in {string} with {string}' do |input_field, value|
