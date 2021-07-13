@@ -1,6 +1,7 @@
 module KnownPages
   KNOWN_PAGES = {
-    "Users" => -> { users_path }
+    "Users" => -> { users_path },
+    "Messages" => -> { messages_path }
   }.freeze
 
   def visit_known_page(page_name)
@@ -27,6 +28,18 @@ end
 
 When 'I click {string}' do |clickable|
   click_on clickable
+end
+
+When 'I open another browser window' do
+  Capybara.session_name = 'another browser window'
+end
+
+When 'I close another browser window' do
+  Capybara.session_name = :default
+end
+
+When 'I wait' do
+  sleep 5
 end
 
 Then 'I should see {string}' do |text|
