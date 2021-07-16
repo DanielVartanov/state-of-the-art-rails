@@ -15,11 +15,11 @@ gem 'bootsnap', require: false
 gem 'haml-rails'
 
 group :development, :test do
-  gem 'break'
   gem 'factory_bot_rails'
   gem 'faker'
-  gem 'puts_debuggerer'
   gem 'rspec-rails'
+  gem 'puts_debuggerer'
+  gem 'byebug'
 end
 
 group :development do
