@@ -20,6 +20,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'puts_debuggerer'
   gem 'byebug'
+  gem 'parallel_tests'
 end
 
 group :development do
