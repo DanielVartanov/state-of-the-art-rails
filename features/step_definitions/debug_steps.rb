@@ -11,6 +11,5 @@ Then 'I run debugger' do
 end
 
 Then 'I pause until further notice' do
-  Kernel.puts 'Press ENTER to continue...'
-  STDIN.gets
+  ask 'Press ENTER to continue...'
 end
