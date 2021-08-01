@@ -13,6 +13,7 @@ gem 'jbuilder'
 gem 'redis'
 gem 'bootsnap', require: false
 gem 'haml-rails'
+gem 'bootstrap'
 
 group :development, :test do
   gem 'factory_bot_rails'
