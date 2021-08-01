@@ -7,6 +7,7 @@ import Rails from "@rails/ujs"
 import "@hotwired/turbo-rails"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import * as bootstrap from "bootstrap"
 
 Rails.start()
 ActiveStorage.start()
