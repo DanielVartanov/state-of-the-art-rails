@@ -9,5 +9,11 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import * as bootstrap from "bootstrap"
 
+document.addEventListener("DOMContentLoaded", function(event) {
+    var myAlert = document.getElementById('myAlert')
+    var alert = new bootstrap.Alert(myAlert)
+    alert.close()
+});
+
 Rails.start()
 ActiveStorage.start()
