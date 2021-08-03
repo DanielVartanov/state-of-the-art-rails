@@ -9,7 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import * as bootstrap from "bootstrap"
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("turbo:load", function(event) {
     var myAlert = document.getElementById('myAlert')
     var alert = new bootstrap.Alert(myAlert)
     alert.close()
