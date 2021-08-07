@@ -4,13 +4,14 @@
   - @users.each do |user|
     %li= user.name
 
-%h3 Add new user
 
-= form_with(model: User.new) do |form|
-  %p
-    = form.label :name, 'Name'
-    = form.text_field :name
-  = form.submit
+.container
+  %h3 Add new user
+  = form_with(model: User.new) do |form|
+    .mb-3
+      = form.label :name, 'Name', class: 'form-label'
+      = form.text_field :name, class: 'form-control'
+    = form.submit class: 'btn btn-primary'
 
 %br
 %hr

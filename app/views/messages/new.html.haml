@@ -1,10 +1,11 @@
 = turbo_frame_tag 'new_message' do
-  = form_with model: Message.new do |form|
-    %p
-      = form.label :user_id, 'Author'
-      = form.collection_select :user_id, User.all, :id, :name
-    %p
-      = form.label :content
-      = form.text_field :content
-    %p
-      = form.submit
+  .container.py-3
+    = form_with model: Message.new do |form|
+      .mb-3
+        = form.label :user_id, 'Author', class: 'form-label'
+        = form.collection_select :user_id, User.all, :id, :name, {}, { class: 'form-select form-select-sm' }
+      .mb-3
+        = form.label :content, class: 'form-label'
+        = form.text_field :content, class: 'form-control'
+
+      = form.submit class: 'btn btn-primary'
