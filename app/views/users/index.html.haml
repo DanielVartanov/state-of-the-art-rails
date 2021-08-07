@@ -1,11 +1,10 @@
-%h2 Users
+.container.py-3
+  %h2 Users
+  %ul.list-group
+    - @users.each do |user|
+      %li.list-group-item= user.name
 
-%ul
-  - @users.each do |user|
-    %li= user.name
-
-
-.container
+.container.py-3
   %h3 Add new user
   = form_with(model: User.new) do |form|
     .mb-3
@@ -13,8 +12,5 @@
       = form.text_field :name, class: 'form-control'
     = form.submit class: 'btn btn-primary'
 
-%br
-%hr
-
-%p
+.container.py-3
   = link_to 'Go to messages', messages_path

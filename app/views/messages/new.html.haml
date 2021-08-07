@@ -1,5 +1,5 @@
 = turbo_frame_tag 'new_message' do
-  .container.py-3
+  .py-3.px-3
     = form_with model: Message.new do |form|
       .mb-3
         = form.label :user_id, 'Author', class: 'form-label'
