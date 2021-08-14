@@ -15,8 +15,8 @@
 
 .container
   %h2 Messages
-  = turbo_frame_tag 'messages' do
-    .px-3.py-3
+  .px-3.py-3
+    = turbo_frame_tag 'messages' do
       = render @messages
 
 .container
