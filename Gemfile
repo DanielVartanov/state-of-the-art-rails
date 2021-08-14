@@ -14,6 +14,7 @@ gem 'redis'
 gem 'bootsnap', require: false
 gem 'haml-rails'
 gem 'bootstrap'
+gem 'bootstrap_form', git: 'https://github.com/bootstrap-ruby/bootstrap_form.git', branch: 'bootstrap-5'
 
 group :development, :test do
   gem 'factory_bot_rails'

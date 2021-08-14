@@ -8,6 +8,6 @@ When 'I send a message {string} on behalf of {string}' do |message, author|
   within 'turbo-frame#new_message' do
     select author, from: 'Author'
     fill_in 'Content', with: message
-    click_on 'Create Message'
+    click_on 'Send'
   end
 end
