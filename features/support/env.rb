@@ -36,7 +36,7 @@ require 'capybara/rails'
 Capybara.default_driver = :selenium_chrome_headless
 Capybara.server = :puma, { Silent: true }
 
-Around('@browser') do |_, block|
+Around('@debug') do |_, block|
   Capybara.default_driver = :selenium_chrome
   block.call
   Capybara.default_driver = :selenium_chrome_headless
