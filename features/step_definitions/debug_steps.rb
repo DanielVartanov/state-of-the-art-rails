@@ -7,6 +7,7 @@ Then 'I wait for {int} seconds' do |seconds|
 end
 
 Then 'I run debugger' do
+  sleep 0.5
   byebug
 end
 
