@@ -13,3 +13,7 @@ end
 Then 'I pause until further notice' do
   ask 'Press ENTER to continue...'
 end
+
+Then 'save and open screenshot' do
+  save_and_open_screenshot
+end

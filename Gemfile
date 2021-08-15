@@ -23,6 +23,7 @@ group :development, :test do
   gem 'puts_debuggerer'
   gem 'byebug'
   gem 'parallel_tests'
+  gem 'launchy'
 end
 
 group :development do
