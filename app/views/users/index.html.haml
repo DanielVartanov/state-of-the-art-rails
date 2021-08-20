@@ -1,14 +1,15 @@
-.container.py-3
-  %h2 Users
-  %ul.list-group
-    - @users.each do |user|
-      %li.list-group-item= user.name
+.container
+  .py-3
+    %h2 Users
+    %ul.list-group
+      - @users.each do |user|
+        %li.list-group-item= user.name
 
-.container.py-3
-  %h3 Add new user
-  = bootstrap_form_with(model: User.new) do |form|
-    = form.text_field :name, required: true
-    = form.primary
+  .py-3
+    %h3 Add new user
+    = bootstrap_form_with(model: User.new) do |form|
+      = form.text_field :name, required: true
+      = form.primary
 
-.container.py-3
-  = link_to 'Go to messages', messages_path
+  .py-3
+    = link_to 'Go to messages', messages_path

@@ -1,11 +1,12 @@
-= turbo_stream_from 'messages_stream'
+.container
+  = turbo_stream_from 'messages_stream'
 
-.container.py-3
-  .alert.alert-primary.alert-dismissible.fade.show{:role => "alert"}
-    %strong This is a bootstrap Alert.
-    I can be closed only if javascript works.
-    Try clicking the cross on the right of this alert.
-    %button.btn-close{ type: "button", "data-bs-dismiss" => "alert", "aria-label" => "Close"}
+  .py-3
+    .alert.alert-primary.alert-dismissible.fade.show{:role => "alert"}
+      %strong This is a bootstrap Alert.
+      I can be closed only if javascript works.
+      Try clicking the cross on the right of this alert.
+      %button.btn-close{ type: "button", "data-bs-dismiss" => "alert", "aria-label" => "Close"}
 
   #myAlert.alert.alert-primary
     This is another bootstrap alert.
@@ -13,14 +14,11 @@
     %br
     %strong If you see this alert in browser, then bootstrap' javascript is not imported correctly.
 
-.container
   %h2 Messages
   .px-3.py-3
     = turbo_frame_tag 'messages' do
       = render @messages
 
-.container
   = render template: 'messages/new'
 
-.container
   %p= link_to 'Go to users', users_path
