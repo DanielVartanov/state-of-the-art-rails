@@ -13,7 +13,7 @@
 
   .py-3
     %h3 Add new user
-    = bootstrap_form_with(model: User.new) do |form|
+    = bootstrap_form_with(model: @user) do |form|
       = form.text_field :name, required: true
       = form.primary
 
