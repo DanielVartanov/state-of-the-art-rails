@@ -5,6 +5,6 @@ class UsersController < ApplicationController
 
   def create
     User.create! params.require(:user).permit(:name)
-    redirect_to :users
+    redirect_to :users, notice: "New user is now a part of the system"
   end
 end
