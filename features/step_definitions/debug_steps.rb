@@ -18,5 +18,6 @@ Then 'I pause until further notice' do
 end
 
 Then 'save and open screenshot' do
+  sleep 0.5
   save_and_open_screenshot # rubocop:disable Lint/Debugger
 end
