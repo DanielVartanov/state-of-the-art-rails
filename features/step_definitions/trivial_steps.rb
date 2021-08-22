@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module KnownPages
   KNOWN_PAGES = {
     "Users" => -> { users_path },

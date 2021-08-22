@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Given 'a message {string} by {string}' do |message, author|
   create :message,
          content: message,

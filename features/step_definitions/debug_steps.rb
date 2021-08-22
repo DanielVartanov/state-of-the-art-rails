@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Then 'I wait' do
   sleep 5
 end
