@@ -3,10 +3,6 @@ class MessagesController < ApplicationController
     @messages = Message.all.includes(:user)
   end
 
-  def new
-
-  end
-
   def create
     @message = Message.create! params.require(:message).permit(:user_id, :content)
 
