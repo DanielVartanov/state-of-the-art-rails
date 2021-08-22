@@ -2,8 +2,8 @@
 
 module KnownPages
   KNOWN_PAGES = {
-    "Users" => -> { users_path },
-    "Messages" => -> { messages_path }
+    'Users' => -> { users_path },
+    'Messages' => -> { messages_path }
   }.freeze
 
   def visit_known_page(page_name)
