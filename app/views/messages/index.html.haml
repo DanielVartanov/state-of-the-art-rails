@@ -19,6 +19,8 @@
     = turbo_frame_tag 'messages' do
       = render @messages
 
-  = render template: 'messages/new'
+  .py-3.px-3
+    = turbo_frame_tag 'new_message' do
+      = render template: 'messages/new'
 
   %p= link_to 'Go to users', users_path
