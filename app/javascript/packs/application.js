@@ -10,7 +10,7 @@ import "channels"
 import * as bootstrap from "bootstrap"
 
 document.addEventListener("turbo:load", function(event) {
-    var myAlert = document.getElementById('myAlert')
+    var myAlert = document.getElementById('my-alert')
     var alert = new bootstrap.Alert(myAlert)
     alert.close()
 });

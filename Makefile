@@ -1,3 +1,7 @@
+.PHONY: test lint setup
+
+default: test lint
+
 setup:
 	bundle install
 	rails db:create db:migrate db:test:prepare parallel:setup
@@ -8,4 +12,4 @@ test:
 
 lint:
 	rubocop
-.PHONY: setup test
+	haml-lint

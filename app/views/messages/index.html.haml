@@ -1,13 +1,13 @@
 = turbo_stream_from 'messages_stream'
 
 .py-3
-  .alert.alert-primary.alert-dismissible.fade.show{:role => "alert"}
+  .alert.alert-primary.alert-dismissible.fade.show{ role: 'alert' }
     %strong This is a bootstrap Alert.
     I can be closed only if javascript works.
     Try clicking the cross on the right of this alert.
-    %button.btn-close{ type: "button", "data-bs-dismiss" => "alert", "aria-label" => "Close"}
+    %button.btn-close{ type: 'button', 'data-bs-dismiss' => 'alert', 'aria-label' => 'Close' }
 
-#myAlert.alert.alert-primary
+.alert.alert-primary#my-alert
   This is another bootstrap alert.
   It gets closed automatically by javascript code in application.js.
   %br

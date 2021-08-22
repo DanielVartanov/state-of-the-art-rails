@@ -164,6 +164,12 @@ GEM
       haml (>= 4.0.6, < 6.0)
       html2haml (>= 1.0.1)
       railties (>= 5.1)
+    haml_lint (0.37.1)
+      haml (>= 4.0, < 5.3)
+      parallel (~> 1.10)
+      rainbow
+      rubocop (>= 0.50.0)
+      sysexits (~> 1.1)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -330,6 +336,7 @@ GEM
       sprockets (>= 3.0.0)
     sys-uname (1.2.2)
       ffi (~> 1.1)
+    sysexits (1.2.0)
     temple (0.8.2)
     thor (1.1.0)
     tilt (2.0.10)
@@ -374,6 +381,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   haml-rails
+  haml_lint
   jbuilder
   launchy
   listen
