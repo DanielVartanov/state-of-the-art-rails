@@ -5,10 +5,7 @@ module KnownPages
   }.freeze
 
   def visit_known_page(page_name)
-    page = KNOWN_PAGES[page_name]
-    page = self.instance_exec(&page) if page.is_a?(Proc)
-
-    visit self.instance_exec(&KNOWN_PAGES.fetch(page_name))
+    visit instance_exec(&KNOWN_PAGES.fetch(page_name))
   end
 end
 
