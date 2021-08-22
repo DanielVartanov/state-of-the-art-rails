@@ -7,5 +7,5 @@ test:
 	parallel_cucumber
 
 lint:
-	rubocop --enable-pending-cops
+	rubocop
 .PHONY: setup test
