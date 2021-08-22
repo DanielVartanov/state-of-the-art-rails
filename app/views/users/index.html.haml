@@ -1,21 +1,14 @@
-.container
-  .py-3
-    - flash.each do |_, flash_text|
-      .alert.alert-primary.alert-dismissible.fade.show{:role => "alert"}
-        = flash_text
-        %button.btn-close{ type: "button", "data-bs-dismiss" => "alert", "aria-label" => "Close"}
+.py-3
+  %h2 Users
+  %ul.list-group
+    - @users.each do |user|
+      %li.list-group-item= user.name
 
-  .py-3
-    %h2 Users
-    %ul.list-group
-      - @users.each do |user|
-        %li.list-group-item= user.name
+.py-3
+  %h3 Add new user
+  = bootstrap_form_with(model: @user) do |form|
+    = form.text_field :name, required: true
+    = form.primary
 
-  .py-3
-    %h3 Add new user
-    = bootstrap_form_with(model: @user) do |form|
-      = form.text_field :name, required: true
-      = form.primary
-
-  .py-3
-    = link_to 'Go to messages', messages_path
+.py-3
+  = link_to 'Go to messages', messages_path
