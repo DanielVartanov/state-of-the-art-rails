@@ -32,3 +32,11 @@ Feature: Messages page
       And I send a message "Hello from another browser window" on behalf of "Mr. Second test"
       And I close another browser window
       Then I should see "\"Hello from another browser window\" by Mr. Second test"
+
+  Rule: Messages are validated
+
+   Scenario: Short message content validation error
+     Given I am on the "Messages" page
+     When I send a message "." on behalf of "Mr. Test"
+     Then I should see "is too short (minimum is 2 characters)"
+     And I should NOT see "\".\" by Mr. Test"

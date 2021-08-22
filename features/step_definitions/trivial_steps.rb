@@ -41,3 +41,7 @@ end
 Then 'I should see {string}' do |text|
   expect(page).to have_content text
 end
+
+Then 'I should NOT see {string}' do |text|
+  expect(page).to have_no_content text
+end
