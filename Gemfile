@@ -24,6 +24,7 @@ group :development, :test do
   gem 'parallel_tests'
   gem 'launchy'
   gem 'ruby_jard'
+  gem 'rubocop'
 end
 
 group :development do

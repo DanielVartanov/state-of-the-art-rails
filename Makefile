@@ -6,4 +6,6 @@ test:
 	parallel_rspec
 	parallel_cucumber
 
+lint:
+	rubocop --enable-pending-cops
 .PHONY: setup test
