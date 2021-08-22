@@ -21,9 +21,9 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'puts_debuggerer'
-  gem 'byebug'
   gem 'parallel_tests'
   gem 'launchy'
+  gem 'ruby_jard'
 end
 
 group :development do
