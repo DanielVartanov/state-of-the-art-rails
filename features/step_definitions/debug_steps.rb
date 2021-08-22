@@ -10,7 +10,7 @@ end
 
 Then 'I run debugger' do
   sleep 0.5
-  byebug
+  jard # rubocop:disable Lint/Debugger
 end
 
 Then 'I pause until further notice' do
@@ -18,5 +18,5 @@ Then 'I pause until further notice' do
 end
 
 Then 'save and open screenshot' do
-  save_and_open_screenshot
+  save_and_open_screenshot # rubocop:disable Lint/Debugger
 end
