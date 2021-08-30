@@ -23,3 +23,4 @@ shall look like as of 2021.
 - dart-sass instead of sassc-ruby
 - Static and runtime type checks (Sorbet or Steep)
 - Containerization
+- Make a [template](https://guides.rubyonrails.org/rails_application_templates.html) from it
