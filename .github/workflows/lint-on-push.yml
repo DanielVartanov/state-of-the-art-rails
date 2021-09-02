@@ -4,8 +4,16 @@ jobs:
   rubocop:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+
+      - run: bundle install
       - run: rubocop
   haml-lint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+
+      - run: bundle install
       - run: haml-lint

@@ -4,10 +4,16 @@ jobs:
   test-rspec:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+
       - run: make setup
       - run: parallel_rspec
   test-cucumber:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+
       - run: make setup
       - run: parallel_cucumber
