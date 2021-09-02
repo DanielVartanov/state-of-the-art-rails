@@ -9,6 +9,7 @@ AllCops:
     - 'bin/**/*'
     - 'db/schema.rb'
     - 'lib/tasks/**/*'
+    - 'vendor/bundle/**/*'
 
 Bundler/OrderedGems:
   Enabled: false
