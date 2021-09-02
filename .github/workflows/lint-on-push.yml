@@ -2,8 +2,10 @@ name: Lint on push
 on: [push]
 jobs:
   rubocop:
+    runs-on: ubuntu-latest
     steps:
       - run: rubocop
   haml-lint:
+    runs-on: ubuntu-latest
     steps:
       - run: haml-lint

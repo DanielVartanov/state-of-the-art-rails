@@ -2,10 +2,12 @@ name: Test on push
 on: [push]
 jobs:
   test-rspec:
+    runs-on: ubuntu-latest
     steps:
       - run: make setup
       - run: parallel_rspec
   test-cucumber:
+    runs-on: ubuntu-latest
     steps:
       - run: make setup
       - run: parallel_cucumber
