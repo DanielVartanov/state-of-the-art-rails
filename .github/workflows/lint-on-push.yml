@@ -3,7 +3,7 @@ on: [push]
 jobs:
   rubocop:
     steps:
-      -run: rubocop
+      - run: rubocop
   haml-lint:
     steps:
-      -run: haml-lint
+      - run: haml-lint

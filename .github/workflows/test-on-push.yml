@@ -3,9 +3,9 @@ on: [push]
 jobs:
   test-rspec:
     steps:
-      -run: make setup
-      -run: parallel_rspec
+      - run: make setup
+      - run: parallel_rspec
   test-cucumber:
     steps:
-      -run: make setup
-      -run: parallel_cucumber
+      - run: make setup
+      - run: parallel_cucumber
