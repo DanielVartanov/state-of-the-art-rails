@@ -10,7 +10,7 @@ jobs:
           bundler-cache: true
 
       - run: bundle install
-      - run: rubocop
+      - run: bundle exec rubocop
   haml-lint:
     runs-on: ubuntu-latest
     steps:
