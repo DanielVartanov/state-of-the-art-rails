@@ -1,4 +1,4 @@
-name :test-on-push
+name: Test on push
 on: [push]
 jobs:
   test-rspec:
