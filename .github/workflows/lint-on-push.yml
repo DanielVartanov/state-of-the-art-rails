@@ -6,8 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
-      - run: bundle install
       - run: rubocop
   haml-lint:
     runs-on: ubuntu-latest
