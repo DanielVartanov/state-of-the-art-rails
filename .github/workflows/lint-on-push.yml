@@ -4,23 +4,24 @@ jobs:
   rubocop:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
+      - Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
       - run: bundle install
-
       - name: Run checks
         run: bundle exec rubocop
 
   haml-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
       - run: bundle install
       - run: bundle exec haml-lint
