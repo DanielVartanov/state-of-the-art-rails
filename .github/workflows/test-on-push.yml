@@ -10,8 +10,8 @@ jobs:
           bundler-cache: true
 
       - run: bundle install
-      - run: rails parallel:setup
-      - run: parallel_rspec
+      - run: bundle exec rails parallel:setup
+      - run: bundle exec parallel_rspec
 
   test-cucumber:
     runs-on: ubuntu-latest
@@ -22,6 +22,6 @@ jobs:
           bundler-cache: true
 
       - run: bundle install
-      - run: rails parallel:setup
+      - run: bundle exec rails parallel:setup
       - run: yarn
       - run: parallel_cucumber
