@@ -24,6 +24,8 @@ jobs:
           bundler-cache: true
       - run: bundle install
       - run: bundle exec rails parallel:setup
+        env:
+          DATABASE_URL: postgres://postgres:postgres@localhost/postgres
       - run: bundle exec parallel_rspec
 
   test-cucumber:
@@ -49,5 +51,9 @@ jobs:
           bundler-cache: true
       - run: bundle install
       - run: bundle exec rails parallel:setup
+        env:
+          DATABASE_URL: postgres://postgres:postgres@localhost/postgres
       - run: yarn
       - run: parallel_cucumber
+        env:
+          DATABASE_URL: postgres://postgres:postgres@localhost/postgres
