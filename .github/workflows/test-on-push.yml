@@ -49,5 +49,4 @@ jobs:
           bundler-cache: true
       - run: bundle install
       - run: bundle exec rails parallel:setup
-      - run: yarn
-      - run: parallel_cucumber
+      - run: bundle exec parallel_cucumber
