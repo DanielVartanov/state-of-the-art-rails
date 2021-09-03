@@ -13,7 +13,7 @@ jobs:
       - run: bundle exec rails parallel:setup
 
       - name: Run tests
-        - run: bundle exec parallel_rspec
+        run: bundle exec parallel_rspec
 
   test-cucumber:
     runs-on: ubuntu-latest

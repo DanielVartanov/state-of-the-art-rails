@@ -12,7 +12,7 @@ jobs:
       - run: bundle install
 
       - name: Run checks
-        - run: bundle exec rubocop
+        run: bundle exec rubocop
 
   haml-lint:
     runs-on: ubuntu-latest
