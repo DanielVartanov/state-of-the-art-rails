@@ -21,4 +21,4 @@ jobs:
           bundler-cache: true
 
       - run: bundle install
-      - run: haml-lint
+      - run: bundle exec haml-lint
