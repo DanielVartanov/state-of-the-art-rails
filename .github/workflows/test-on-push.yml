@@ -4,13 +4,13 @@ jobs:
   test-rspec:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup
-        - uses: actions/checkout@v2
-        - uses: ruby/setup-ruby@v1
-          with:
-            bundler-cache: true
-        - run: bundle install
-        - run: bundle exec rails parallel:setup
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: bundle install
+      - run: bundle exec rails parallel:setup
 
       - name: Run tests
         - run: bundle exec parallel_rspec

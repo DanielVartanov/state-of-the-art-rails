@@ -4,12 +4,12 @@ jobs:
   rubocop:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup
-        - uses: actions/checkout@v2
-        - uses: ruby/setup-ruby@v1
-          with:
-            bundler-cache: true
-        - run: bundle install
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: bundle install
 
       - name: Run checks
         - run: bundle exec rubocop
