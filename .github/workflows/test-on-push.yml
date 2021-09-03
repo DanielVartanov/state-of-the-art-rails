@@ -6,14 +6,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
-      - run: make setup
+      - run: bundle install
+      - run: rails parallel:setup
       - run: parallel_rspec
+
   test-cucumber:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
-      - run: make setup
+      - run: bundle install
+      - run: rails parallel:setup
+      - run: yarn
       - run: parallel_cucumber
