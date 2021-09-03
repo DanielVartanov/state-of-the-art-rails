@@ -18,10 +18,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
       - run: bundle install
       - run: bundle exec rails parallel:setup
       - run: bundle exec parallel_rspec
@@ -43,10 +45,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
       - run: bundle install
       - run: bundle exec rails parallel:setup
+      - run: yarn
       - run: bundle exec parallel_cucumber
