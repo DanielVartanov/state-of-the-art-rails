@@ -11,11 +11,14 @@ jobs:
 
       - run: bundle install
       - run: bundle exec rubocop
+
   haml-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
       - run: bundle install
       - run: haml-lint
