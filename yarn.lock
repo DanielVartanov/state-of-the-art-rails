@@ -885,18 +885,18 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@hotwired/turbo-rails@7.0.0-beta.5":
-  version "7.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.0.0-beta.5.tgz#a0efdb7a20613845c43afe6f376b353e62f7e68d"
-  integrity sha512-zj+ZYbs2IHeJHtLavcLX5K0oW/3K8s3zjok4lpujxqLactp3OpuqBZxKBr+tgODnAX/WYFoKLpzivyx3xVRfTw==
+"@hotwired/turbo-rails@7.0.0-rc.3":
+  version "7.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.0.0-rc.3.tgz#ebb088a0c9f6eed23a99b396c2ae59d0c57644e0"
+  integrity sha512-J5NLTGSvlFW86pRxEm2WlYKdNeIkmQT9ZmIo1Rputj7BLymZYDCglaZ2vhMVFnQJ4qXEq4ttS3xeQt3cCG2Tdg==
   dependencies:
-    "@hotwired/turbo" "^7.0.0-beta.4"
-    "@rails/actioncable" "^6.1.0"
+    "@hotwired/turbo" "^7.0.0-rc.3"
+    "@rails/actioncable" "^6.0.0"
 
-"@hotwired/turbo@^7.0.0-beta.4":
-  version "7.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.0.0-beta.5.tgz#3167e8e882b9075c5b3b2e2f32432cca2862c61c"
-  integrity sha512-z10dI2U/StkMSmnfJUsyez6jrhnitgzjyw2CxE3LnAAzW/TBhvsMYKsVG7Xu337r3gh0r6UwIFWyvvtm3in6gg==
+"@hotwired/turbo@^7.0.0-rc.3":
+  version "7.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.0.0-rc.3.tgz#f31289fc185e09524445471d1b46b59cac0f99cb"
+  integrity sha512-Xiqtb2fvKcnkc/6cJNx8x2+KHswJeMmNLXPSc8jIE6sYAhnL8pDY2ewiV3x5JS/y+/yWhQSMMHONBwHt8ykYKQ==
 
 "@npmcli/move-file@^1.0.1":
   version "1.1.2"
@@ -911,10 +911,15 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
   integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
-"@rails/actioncable@6.1.3", "@rails/actioncable@^6.1.0":
+"@rails/actioncable@6.1.3":
   version "6.1.3"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.3.tgz#c8a67ec4d22ecd6931f7ebd98143fddbc815419a"
   integrity sha512-m02524MR9cTnUNfGz39Lkx9jVvuL0tle4O7YgvouJ7H83FILxzG1nQ5jw8pAjLAr9XQGu+P1sY4SKE3zyhCNjw==
+
+"@rails/actioncable@^6.0.0":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.4.tgz#c3c5a9f8302c429af9722b6c50ab48049016d2a3"
+  integrity sha512-0LmSKJTuo2dL6BQ+9xxLnS9lbkyfz2mBGeBnQ2J7o9Bn0l0q+ZC6VuoZMZZXPvABI4QT7Nfknv5WhfKYL+boew==
 
 "@rails/activestorage@6.1.3":
   version "6.1.3"
