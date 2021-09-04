@@ -1,4 +1,9 @@
 {
+  "packageRules": [
+    {
+      "automerge": true
+    }
+  ],
   "extends": [
     "config:base"
   ]
