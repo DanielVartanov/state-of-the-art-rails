@@ -70,7 +70,7 @@ jobs:
       - run: bundle exec rails parallel:setup
       - run: bundle exec parallel_cucumber
 
-    rubocop:
+  rubocop:
     name: rubocop
     runs-on: ubuntu-latest
     steps:
