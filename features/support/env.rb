@@ -34,6 +34,8 @@ ActionController::Base.allow_rescue = false
 
 DatabaseCleaner.strategy = :truncation
 
+Webdrivers.install_dir += ENV['TEST_ENV_NUMBER'].to_s
+
 require 'capybara/rails'
 Capybara.default_driver = :selenium_chrome_headless
 Capybara.server = :puma, { Silent: true }
