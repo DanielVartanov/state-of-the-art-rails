@@ -50,4 +50,5 @@ group :test do
   gem 'rspec-its'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'super_diff'
 end

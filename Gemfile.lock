@@ -72,6 +72,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
+    attr_extras (6.2.4)
     autoprefixer-rails (10.3.1.0)
       execjs (~> 2)
     awesome_print (1.9.2)
@@ -201,11 +202,14 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.3-x86_64-linux)
       racc (~> 1.4)
+    optimist (3.0.1)
     parallel (1.20.1)
     parallel_tests (3.7.1)
       parallel
     parser (3.0.2.0)
       ast (~> 2.4.1)
+    patience_diff (1.2.0)
+      optimist (~> 3.0)
     pg (1.2.3)
     popper_js (2.9.3)
     pry (0.13.1)
@@ -334,6 +338,10 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    super_diff (0.8.0)
+      attr_extras (>= 6.2.4)
+      diff-lcs
+      patience_diff
     sys-uname (1.2.2)
       ffi (~> 1.1)
     sysexits (1.2.0)
@@ -405,6 +413,7 @@ DEPENDENCIES
   spring
   spring-commands-cucumber
   spring-commands-rspec
+  super_diff
   turbo-rails
   web-console
   webdrivers
