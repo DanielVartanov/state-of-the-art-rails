@@ -2,7 +2,7 @@
   "name": "sandbox-rails",
   "private": true,
   "dependencies": {
-    "@hotwired/turbo-rails": "7.1.0",
+    "@hotwired/turbo-rails": "7.1.1",
     "@popperjs/core": "2.11.2",
     "@rails/actioncable": "7.0.1",
     "@rails/activestorage": "7.0.0",
