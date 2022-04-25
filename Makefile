@@ -4,7 +4,6 @@ default: test lint
 
 setup:
 	bundle install
-	yarn
 	rails db:create db:migrate db:test:prepare parallel:setup
 
 test:

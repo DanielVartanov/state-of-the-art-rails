@@ -15,7 +15,7 @@ RSpec.describe User do
     context 'when there are two users with the equal messages count' do
       before do
         2.times do
-          create(:user).then { |user| create :message, user: user }
+          create(:user).then { |user| create :message, user: }
         end
       end
 

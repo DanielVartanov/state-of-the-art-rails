@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: sandbox_rails_development
+  database: state_of_the_art_rails_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: sandbox_rails
+  #username: state_of_the_art_rails
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sandbox_rails_test<%= ENV['TEST_ENV_NUMBER'] %>
+  database: state_of_the_art_rails_test<%= ENV['TEST_ENV_NUMBER'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -74,13 +74,12 @@ test:
 # URL environment variable explicitly:
 #
 #   production:
-#     url: <%= ENV['MY_APP_DATABASE_URL'] %>
+#     url: <%= ENV["MY_APP_DATABASE_URL"] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
 production:
   <<: *default
-  database: sandbox_rails_production
-  username: sandbox_rails
-  password: <%= ENV['SANDBOX_RAILS_DATABASE_PASSWORD'] %>
+  database: state_of_the_art_rails_production
+  password: <%= ENV["STATE_OF_THE_ART_RAILS_DATABASE_PASSWORD"] %>

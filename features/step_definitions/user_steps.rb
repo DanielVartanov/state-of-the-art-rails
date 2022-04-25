@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Given 'a user {string}' do |name|
-  create(:user, name: name)
+  create(:user, name:)
 end
 
 users_list_css = 'ul.list-group'

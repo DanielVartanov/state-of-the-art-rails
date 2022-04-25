@@ -1,7 +1,7 @@
 # State-of-the-art Rails
 
 This repo is a snapshot of what an empty but advanced Rails project
-shall look like as of 2021.
+shall look like as of 2022.
 
 ## What's included
 
@@ -10,7 +10,7 @@ shall look like as of 2021.
 - Haml
 - Headless browser based system tests
 - FactoryBot and Faker
-- Byebug, RubyJard and puts_debuggerer
+- RubyJard and puts_debuggerer
 - RSpec and Cucumber
 - Tests parallelisation
 - Makefile
