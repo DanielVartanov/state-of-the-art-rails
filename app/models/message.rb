@@ -5,7 +5,7 @@ class Message < ApplicationRecord
 
   validates :content, length: { minimum: 2 }
 
-  after_create_commit -> { broadcast_append_to 'messages_stream', target: 'messages' }
+  broadcasts_to ->(_) { 'messages_stream' }
 
   def as_quote
     "\"#{content}\" by #{user.name}"

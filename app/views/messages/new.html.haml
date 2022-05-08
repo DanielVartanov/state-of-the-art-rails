@@ -1,4 +1,5 @@
-= bootstrap_form_with model: @message do |form|
-  = form.collection_select :user_id, User.all, :id, :name, { label: 'Author' }, control_class: 'form-select form-select-sm'
-  = form.text_field :content, required: true
-  = form.primary 'Send'
+= turbo_frame_tag Message.new do
+  = bootstrap_form_with model: @message do |form|
+    = form.collection_select :user_id, User.all, :id, :name, { label: 'Author' }, control_class: 'form-select form-select-sm'
+    = form.text_field :content, required: true
+    = form.primary 'Send'

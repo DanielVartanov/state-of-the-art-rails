@@ -1,4 +1,5 @@
-%p
-  "#{message.content}" by
-  %strong
-    = message.user.name
+= turbo_frame_tag message do
+  %p
+    "#{message.content}" by
+    %strong
+      = message.user.name
