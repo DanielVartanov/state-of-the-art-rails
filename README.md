@@ -1,7 +1,7 @@
 # State-of-the-art Rails
 
 This repo is a snapshot of what an empty but advanced Rails project
-shall look like as of 2022.
+shall look like as of 2023.
 
 ## What's included
 
