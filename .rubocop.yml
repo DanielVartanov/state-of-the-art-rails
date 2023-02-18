@@ -48,3 +48,6 @@ RSpec/LeadingSubject:
 
 RSpec/MultipleExpectations:
   Enabled: false
+
+RSpec/FactoryBot/ConsistentParenthesesStyle:
+  Enabled: false
