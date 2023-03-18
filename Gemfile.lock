@@ -214,7 +214,7 @@ GEM
       ast (~> 2.4.1)
     patience_diff (1.2.0)
       optimist (~> 3.0)
-    pg (1.4.5)
+    pg (1.4.6)
     popper_js (2.11.6)
     pry (0.13.1)
       coderay (~> 1.1)
