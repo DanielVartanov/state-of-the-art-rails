@@ -395,7 +395,7 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   sassc-rails
-  selenium-webdriver
+  selenium-webdriver (< 4.8.2)
   spring
   spring-commands-cucumber
   spring-commands-rspec
