@@ -24,7 +24,6 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'puts_debuggerer'
-  gem 'ruby_jard'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false

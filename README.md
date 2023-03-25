@@ -10,7 +10,7 @@ shall look like as of 2023.
 - Haml
 - Headless browser based system tests
 - FactoryBot and Faker
-- RubyJard and puts_debuggerer
+- puts_debuggerer and pry
 - RSpec and Cucumber
 - Tests parallelisation
 - Makefile
@@ -20,6 +20,7 @@ shall look like as of 2023.
 
 ## TODO
 
+- RubyJard is discontinued, research current state-of-the-art debugger
 - dart-sass instead of sassc-ruby
 - Static and runtime type checks (Sorbet or Steep)
 - Containerization

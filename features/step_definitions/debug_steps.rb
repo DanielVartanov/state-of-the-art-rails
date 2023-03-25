@@ -10,7 +10,7 @@ end
 
 Then 'I run debugger' do
   sleep 0.5
-  jard # rubocop:disable Lint/Debugger
+  binding.pry # rubocop:disable Lint/Debugger
 end
 
 Then 'I pause until further notice' do
