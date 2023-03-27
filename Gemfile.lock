@@ -311,7 +311,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (4.8.1)
+    selenium-webdriver (4.8.3)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -395,7 +395,7 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   sassc-rails
-  selenium-webdriver (< 4.8.2)
+  selenium-webdriver (< 4.8.4)
   spring
   spring-commands-cucumber
   spring-commands-rspec

@@ -41,7 +41,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'selenium-webdriver', '< 4.8.2' # https://github.com/SeleniumHQ/selenium/issues/11815
+  gem 'selenium-webdriver', '< 4.8.4' # https://github.com/SeleniumHQ/selenium/issues/11815
   gem 'webdrivers'
   gem 'rspec-its'
   gem 'cucumber-rails', require: false
