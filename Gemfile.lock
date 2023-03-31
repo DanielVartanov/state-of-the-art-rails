@@ -215,7 +215,7 @@ GEM
     pg (1.4.6)
     popper_js (2.11.6)
     public_suffix (5.0.1)
-    puma (6.2.0)
+    puma (6.2.1)
       nio4r (~> 2.0)
     puts_debuggerer (0.13.5)
       awesome_print (~> 1.9.2)
