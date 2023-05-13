@@ -39,10 +39,16 @@ Style/SymbolArray:
   Enabled: false
 
 
-# RSpec
+# FactoryBot
 
-RSpec/FactoryBot/CreateList:
+FactoryBot/CreateList:
   Enabled: false
+
+FactoryBot/ConsistentParenthesesStyle:
+  Enabled: false
+
+
+# RSpec
 
 RSpec/LeadingSubject:
   Enabled: false
@@ -50,5 +56,11 @@ RSpec/LeadingSubject:
 RSpec/MultipleExpectations:
   Enabled: false
 
-RSpec/FactoryBot/ConsistentParenthesesStyle:
+
+# Capybara
+
+Capybara/NegationMatcher:
+  # There is a difference between `.to have_no_content(name)` and
+  # `.not_to have_content` in Capybara, it either awaits for content
+  # to disappear or fails immediately
   Enabled: false
