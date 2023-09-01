@@ -215,7 +215,7 @@ GEM
       racc
     patience_diff (1.2.0)
       optimist (~> 3.0)
-    pg (1.5.3)
+    pg (1.5.4)
     popper_js (2.11.8)
     public_suffix (5.0.1)
     puma (6.3.1)
