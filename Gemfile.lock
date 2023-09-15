@@ -81,7 +81,7 @@ GEM
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.11.8, < 3)
       sassc-rails (>= 2.0.0)
-    bootstrap_form (5.3.0)
+    bootstrap_form (5.3.1)
       actionpack (>= 6.1)
       activemodel (>= 6.1)
     builder (3.2.4)
