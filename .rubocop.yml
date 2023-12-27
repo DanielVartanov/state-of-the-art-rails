@@ -65,3 +65,6 @@ Capybara/NegationMatcher:
   # `.not_to have_content` in Capybara, it either awaits for content
   # to disappear or fails immediately
   Enabled: false
+
+Capybara/ClickLinkOrButtonStyle:
+  Enabled: false
