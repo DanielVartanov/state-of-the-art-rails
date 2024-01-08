@@ -165,8 +165,8 @@ GEM
       activesupport (>= 5.1)
       haml (>= 4.0.6)
       railties (>= 5.1)
-    haml_lint (0.52.0)
-      haml (>= 4.0)
+    haml_lint (0.53.0)
+      haml (>= 5.0)
       parallel (~> 1.10)
       rainbow
       rubocop (>= 1.0)
@@ -219,7 +219,7 @@ GEM
     parallel (1.24.0)
     parallel_tests (4.4.0)
       parallel
-    parser (3.2.2.4)
+    parser (3.3.0.2)
       ast (~> 2.4.1)
       racc
     patience_diff (1.2.0)
@@ -279,7 +279,7 @@ GEM
       redis-client (>= 0.17.0)
     redis-client (0.19.1)
       connection_pool
-    regexp_parser (2.8.3)
+    regexp_parser (2.9.0)
     reline (0.4.1)
       io-console (~> 0.5)
     rexml (3.2.6)
