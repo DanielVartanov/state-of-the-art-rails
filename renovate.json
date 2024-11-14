@@ -1,11 +1,20 @@
 {
   "packageRules": [
     {
-        "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "lockFileMaintenance", "rollback", "bump"],
-        "automerge": true
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ],
+      "automerge": true
     }
   ],
   "extends": [
-    "config:base"
+    "config:recommended"
   ]
 }
