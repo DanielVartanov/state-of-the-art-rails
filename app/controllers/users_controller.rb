@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class UsersController < ApplicationController
   before_action :find_users
 
@@ -8,12 +6,12 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new params.require(:user).permit(:name)
+    @user = User.new params.expect(user: [:name])
 
     if @user.save
       redirect_to :users, notice: "New user #{@user.name} is now a part of the system"
     else
-      flash.now.alert = 'There was a problem adding a new user'
+      flash.now.alert = "There was a problem adding a new user"
       render :index, status: :unprocessable_entity
     end
   end

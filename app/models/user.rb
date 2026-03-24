@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class User < ApplicationRecord
   has_many :messages, dependent: :destroy
 
@@ -9,7 +7,7 @@ class User < ApplicationRecord
     User
       .left_outer_joins(:messages)
       .group(:id)
-      .order('count(messages.id) desc')
+      .order(Message.arel_table[:id].count.desc)
       .first
   end
 end

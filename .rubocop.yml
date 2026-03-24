@@ -19,11 +19,6 @@ Bundler/OrderedGems:
 Layout/LineLength:
   Enabled: false
 
-Lint/Debugger:
-  DebuggerMethods:
-    RubyJard:
-      - jard
-
 Metrics:
   Enabled: false
 

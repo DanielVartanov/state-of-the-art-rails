@@ -1,0 +1,5 @@
+/* Debug: make turbo-frames visible during development */
+turbo-frame {
+  display: block;
+  border: 1px solid gold;
+}

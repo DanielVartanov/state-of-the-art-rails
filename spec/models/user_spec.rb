@@ -1,18 +1,16 @@
-# frozen_string_literal: true
-
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe User do
-  describe '.most_talkative' do
+  describe ".most_talkative" do
     subject { described_class.most_talkative }
 
-    context 'when there is only one user, even without messages' do
+    context "when there is only one user, even without messages" do
       let!(:lonely_user) { create :user }
 
       it { is_expected.to eq lonely_user }
     end
 
-    context 'when there are two users with the equal messages count' do
+    context "when there are two users with the equal messages count" do
       before do
         2.times do
           create(:user).then { |user| create :message, user: }
@@ -24,7 +22,7 @@ RSpec.describe User do
       it { is_expected.not_to eq silent_user }
     end
 
-    context 'when there are two users with unequal amount of messages' do
+    context "when there are two users with unequal amount of messages" do
       let(:first_user) { create :user }
       let(:second_user) { create :user }
 

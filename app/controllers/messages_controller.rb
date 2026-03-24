@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class MessagesController < ApplicationController
   def index
     @message = Message.new
@@ -7,7 +5,7 @@ class MessagesController < ApplicationController
   end
 
   def create
-    message = Message.new params.require(:message).permit(:user_id, :content)
+    message = Message.new params.expect(message: [:user_id, :content])
 
     if message.save
       @message = Message.new # Render a fresh empty form
