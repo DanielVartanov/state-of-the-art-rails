@@ -1,0 +1,12 @@
+= turbo_frame_tag(@message) do
+  %article
+    = form_with(model: @message, id: "edit_message") do |f|
+      - if @message.errors.any?
+        - @message.errors.full_messages.each do |error|
+          %p= error
+
+      = f.label :content
+      = f.text_field :content
+      %div{role: "group"}
+        = f.submit "Save"
+        = link_to "Cancel", messages_path, role: "button", class: "secondary outline"

@@ -1,65 +1,10 @@
-require:
-  - rubocop-rails
-  - rubocop-rspec
-  - rubocop-performance
-  - rubocop-capybara
-  - rubocop-factory_bot
+# Omakase Ruby styling for Rails
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 
-AllCops:
-  NewCops: enable
-  Exclude:
-    - 'bin/**/*'
-    - 'db/schema.rb'
-    - 'lib/tasks/**/*'
-    - 'vendor/bundle/**/*'
+# Overwrite or add rules to create your own house style
 
-Bundler/OrderedGems:
-  Enabled: false
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: no_space
 
-Layout/LineLength:
-  Enabled: false
-
-Metrics:
-  Enabled: false
-
-Style/BlockComments:
-  Enabled: false
-
-Style/ConditionalAssignment:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
-
-Style/SymbolArray:
-  Enabled: false
-
-
-# FactoryBot
-
-FactoryBot/CreateList:
-  Enabled: false
-
-FactoryBot/ConsistentParenthesesStyle:
-  Enabled: false
-
-
-# RSpec
-
-RSpec/LeadingSubject:
-  Enabled: false
-
-RSpec/MultipleExpectations:
-  Enabled: false
-
-
-# Capybara
-
-Capybara/NegationMatcher:
-  # There is a difference between `.to have_no_content(name)` and
-  # `.not_to have_content` in Capybara, it either awaits for content
-  # to disappear or fails immediately
-  Enabled: false
-
-Capybara/ClickLinkOrButtonStyle:
-  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: single_quotes

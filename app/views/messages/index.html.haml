@@ -1,24 +1,8 @@
-= turbo_stream_from "messages_stream"
+%h1 Messages
 
-.py-3
-  .alert.alert-primary.alert-dismissible.fade.show{ role: "alert" }
-    %strong This is a bootstrap Alert.
-    I can be closed only if javascript works.
-    Try clicking the cross on the right of this alert.
-    %button.btn-close{ type: "button", "data-bs-dismiss" => "alert", "aria-label" => "Close" }
+= turbo_stream_from "messages"
 
-.alert.alert-primary{ data: { controller: "auto-dismiss" } }
-  This is another bootstrap alert.
-  It gets closed automatically by the auto-dismiss Stimulus controller.
-  %br
-  %strong If you see this alert in browser, then bootstrap's javascript is not imported correctly.
+#messages
+  = render @messages
 
-%h2 Messages
-.px-3.py-3
-  = turbo_frame_tag "messages" do
-    = render @messages
-
-.py-3.px-3
-  = render template: "messages/new"
-
-%p= link_to "Go to users", users_path
+= render "form", message: @message, authors: @authors

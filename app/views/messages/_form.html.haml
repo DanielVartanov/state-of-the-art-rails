@@ -1,0 +1,13 @@
+= form_with(model: message, id: "new_message") do |f|
+  - if message.errors.any?
+    - message.errors.full_messages.each do |error|
+      %p= error
+
+  .grid
+    %div
+      = f.label :author_id, "Author"
+      = f.collection_select :author_id, authors, :id, :name, prompt: "Select an author"
+    %div
+      = f.label :content
+      = f.text_field :content
+  = f.submit "Send"

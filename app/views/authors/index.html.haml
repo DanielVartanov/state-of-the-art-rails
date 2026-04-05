@@ -1,0 +1,17 @@
+%h1 Authors
+
+%article
+  #authors
+    - @authors.each do |author|
+      %p= author.name
+
+= form_with(model: @author) do |f|
+  - if @author.errors.any?
+    - @author.errors.full_messages.each do |message|
+      %p= message
+
+  = f.label :name
+  = f.text_field :name
+  = f.submit "Create Author"
+
+= link_to "Go to messages", messages_path, role: "button", class: "outline"

@@ -1,5 +1,20 @@
 {
-  "extends": [
-    "config:recommended"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchManagers": ["bundler"],
+      "groupName": "Ruby minor/patch dependencies"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions minor/patch"
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "groupName": "Docker images"
+    }
   ]
 }

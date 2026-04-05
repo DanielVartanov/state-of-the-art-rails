@@ -1,5 +1,7 @@
-= turbo_frame_tag message do
-  %p
-    "#{message.content}" by
-    %strong
-      = message.user.name
+= turbo_stream_from message
+= turbo_frame_tag(message) do
+  %article
+    %p "#{message.content}" by #{message.author.name}
+    %div{role: "group"}
+      = button_to "Edit", edit_message_path(message), method: :get, class: "secondary outline"
+      = button_to "Delete", message_path(message), method: :delete, class: "secondary outline"

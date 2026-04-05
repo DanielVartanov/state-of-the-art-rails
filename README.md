@@ -5,23 +5,13 @@ shall look like as of 2026.
 
 ## What's included
 
-- Rails 8 with Propshaft
-- Turbo 8 (Frames, Streams, and morphing-ready)
-- Stimulus
+- Agentic infrastructure
+- Rubocop
+- Turbo and Hotwire
 - Haml
-- Bootstrap (via cssbundling-rails with dart-sass)
-- Solid Cable (no Redis dependency for Action Cable)
 - Headless browser based system tests
 - FactoryBot and Faker
+- puts_debuggerer and pry
 - RSpec and Cucumber
-- Brakeman security scanning
-- RuboCop with rails, rspec, and performance extensions
-- Importmap for JavaScript
-- PostgreSQL
-
-
-## TODO
-
-- Static and runtime type checks (Sorbet or Steep)
-- Containerization (Docker + Kamal)
-- Make a [template](https://guides.rubyonrails.org/rails_application_templates.html) from it
+- Tests parallelisation
+- Justfile

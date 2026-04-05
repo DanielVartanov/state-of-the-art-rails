@@ -4,3 +4,5 @@ exclude:
 linters:
   LineLength:
     enabled: false
+  SpaceInsideHashAttributes:
+    style: no_space
